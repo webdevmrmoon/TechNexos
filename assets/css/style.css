@@ -8560,12 +8560,14 @@ body.dark .hamburger .line {
         position: fixed;
         display: none;
         background: linear-gradient(48deg, #0c0c0c, #2e2d2e);
-        top: 102px;
+        top: 60px;
         width: 100%;
         height: 100vh;
         left: 0px;
     }
-
+    .headerSubNav {
+        background: transparent;
+    }
     .headerMenu {
         flex-direction: column;
     }
@@ -8618,6 +8620,19 @@ body.dark .hamburger .line {
         display: block;
         color: #fff;
     }
+    .headerSection.scroll-down .headerMenu>li>a {
+        padding: 5px 0px;
+    }
+    .headerSection.scroll-up .headerMenu>li>a {
+        padding: 5px 0px;
+    }
+  
+    .headerSection.scroll-down .headerNav {
+        top: 41px;
+    }
+    .headerSection.scroll-up .headerNav {
+        top: 41px;
+    }
 
     .headerMenu>li a:hover:after {
         left: unset;
@@ -8640,14 +8655,13 @@ body.dark .hamburger .line {
     }
 
     .headerMenu>li a:hover {
-        color: #ff9627;
+        color: #11ffef;
         ;
     }
 
     .hasSub.active>a {
-        color: #ff9627;
+        color: #11ffef;
     }
-
 }
 
 
